@@ -1,0 +1,25 @@
+﻿.tools-button {
+    float: right;
+    margin-right: 1rem;
+}
+
+.pure-form select {
+    height: 2.4rem;
+}
+
+.label-input {
+    padding: 0.5em 0.6em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+
+.order span {
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px;
+    margin:5px 0px;
+}

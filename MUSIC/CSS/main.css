@@ -1,0 +1,201 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*
+ * -- BASE STYLES --
+ * Most of these are inherited from Base, but I want to change a few.
+ */
+body {
+    line-height: 1.7em;
+    color: #111;
+    font-size: 16px;
+    overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+    color: #34495e;
+}
+
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+ * -- LAYOUT STYLES --
+ * These are some useful classes which I will need
+ */
+.l-box {
+    padding: 1em;
+}
+
+.l-box-lrg {
+    padding: 2em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.is-center {
+    text-align: center;
+}
+
+
+
+/*
+ * -- MENU STYLES --
+ * I want to customize how my .pure-menu looks at the top of the page
+ */
+
+#m-header .home-menu {
+    padding: 0.5em;
+    text-align: left;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
+}
+
+#m-header .home-menu {
+    background: #2d3e50;
+}
+
+#m-header .pure-menu .pure-menu-fixed {
+    /* Fixed menus normally have a border at the bottom. */
+    border-bottom: none;
+    /* I need a higher z-index here because of the scroll-over effect. */
+    z-index: 4;
+}
+
+#m-header .home-menu .pure-menu-heading {
+    color: white;
+    font-weight: 400;
+    font-size: 120%;
+}
+
+#m-header .home-menu .pure-menu-selected a {
+    color: white;
+}
+
+#m-header .home-menu a {
+    color: #6FBEF3;
+}
+
+#m-header .home-menu ul {
+    float: right;
+}
+
+#m-header .home-menu li a:hover,
+#m-header .home-menu li a:focus {
+    background: none;
+    border: none;
+    color: #AECFE5;
+}
+
+/*
+ * -- CONTENT STYLES --
+ * This represents the content area (everything below the blue section)
+ */
+.content-wrapper {
+    /* These styles are required for the "scroll-over" effect */
+    position: absolute;
+    top: 3.9rem;
+    width: 100%;
+    min-height: 12%;
+    z-index: 2;
+    background: white;
+}
+#m-body {
+    background: rgb(37, 42, 58);
+}
+#nav {
+    background: rgb(37, 42, 58);
+    color: #333;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#nav .pure-menu {
+    background: transparent;
+    border: none;
+    text-align: left;
+}
+
+#nav .pure-menu-item {
+    background-color: transparent;
+}
+
+#nav .pure-menu-selected {
+    background-color: #6FBEF3;
+}
+
+#nav .pure-menu-selected .pure-menu-link,
+#nav .pure-menu-link:hover,
+#nav .pure-menu-link:focus {
+    background: rgb(55, 60, 90);
+}
+
+#nav .pure-menu-link {
+    color: #fff;
+    margin-left: 0.5em;
+}
+
+#nav .pure-menu-heading {
+    border-bottom: none;
+    font-size: 110%;
+    color: rgb(75, 113, 151);
+}
+
+#main {
+    padding-left: 1rem;
+    padding-bottom: 5rem;
+    background: white;
+    height:90vh;
+    overflow: auto;
+}
+
+/* This is the class used for the footer */
+.footer {
+    background: #111;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.img-button {
+    border: 0;
+    cursor: pointer;
+    width: 1.6rem;
+}
+
+table {
+    width: 98%;
+}
+
+.pure-form input[type="text"][disabled],
+.pure-form input[type="password"][disabled],
+.pure-form input[type="email"][disabled],
+.pure-form input[type="url"][disabled],
+.pure-form input[type="date"][disabled],
+.pure-form input[type="month"][disabled],
+.pure-form input[type="time"][disabled],
+.pure-form input[type="datetime"][disabled],
+.pure-form input[type="datetime-local"][disabled],
+.pure-form input[type="week"][disabled],
+.pure-form input[type="number"][disabled],
+.pure-form input[type="search"][disabled],
+.pure-form input[type="tel"][disabled],
+.pure-form input[type="color"][disabled],
+.pure-form select[disabled],
+.pure-form textarea[disabled] {
+    cursor: not-allowed;
+    background-color: #eaeded;
+    color: #333;
+}
+#m-footer{
+    color:#eaeded;
+}

@@ -1,0 +1,109 @@
+﻿.ol-header {
+    line-height: 80px;
+    height: 80px;
+    background-image: url(../images/bg0.jpg);
+    background-size: 100% 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.home {
+    margin-left: 20px;
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: bolder;
+}
+
+.bg-content {
+    width: 90%;
+    margin: 0 auto;
+    height: 100vh;
+}
+
+#form1 {
+    background-image: url(../images/bg2.jpg);
+    background-size: 100% 100%;
+    padding: 5px 20px;
+    overflow: auto;
+}
+table {
+    background: #ffffff;
+}
+
+h2 {
+    color: #808080;
+}
+
+.pure-menu-heading {
+    font-weight: bolder;
+    font-size: 18px;
+    border-bottom: solid 1px #808080;
+}
+
+.pager {
+    width: 650px;
+    margin: 0 auto;
+}
+
+.sidebar {
+    box-shadow: 3px -1px 10px #808080;
+    height: 90vh;
+    background: #ffffff;
+    margin-right: 20px;
+}
+
+.content {
+    margin-top: 20px;
+}
+
+.genre-item {
+    background: #ffffff;
+    width: 160px;
+    height: 270px;
+    box-shadow: 0 0 2px #808080;
+    border-radius: 5px;
+    margin: 10px 30px;
+}
+
+    .genre-item .music-image {
+        width: 160px;
+        height: 150px;
+    }
+
+        .genre-item .music-image img {
+            width: 100%;
+            height: 100%;
+        }
+
+    .genre-item .music-title {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        font-weight: 700;
+        line-height: 18px;
+    }
+
+    .genre-item .music-artist {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        display: block;
+        color: #808080;
+        font-size: 10px;
+    }
+
+    .genre-item .music-price {
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: #ff6a00;
+        font-size: 12px;
+        font-weight: bolder;
+    }
+
+    .genre-item .music-body {
+        padding-left: 5px;
+    }

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4ff40e7e6aba459b864d3feef3a81553" Name="Diagram1">
+        <EntityTypeShape EntityType="OLMSDBModel.Albums" Width="1.5" PointX="3" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OLMSDBModel.Artists" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="OLMSDBModel.Carts" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="OLMSDBModel.Genres" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="OLMSDBModel.OrderDetails" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OLMSDBModel.Orders" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="OLMSDBModel.Roles" Width="1.5" PointX="5.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="OLMSDBModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="OLMSDBModel.Users" Width="1.5" PointX="8" PointY="7.25" IsExpanded="true" />
+        <AssociationConnector Association="OLMSDBModel.FK__Album__ArtistId__276EDEB3" ManuallyRouted="false" />
+        <AssociationConnector Association="OLMSDBModel.FK_Album_Genre" ManuallyRouted="false" />
+        <AssociationConnector Association="OLMSDBModel.FK_Cart_Album" ManuallyRouted="false" />
+        <AssociationConnector Association="OLMSDBModel.FK_OrderDetail_Album" ManuallyRouted="false" />
+        <AssociationConnector Association="OLMSDBModel.FK__InvoiceLi__Invoi__2F10007B" ManuallyRouted="false" />
+        <AssociationConnector Association="OLMSDBModel.FK_Users_Roles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

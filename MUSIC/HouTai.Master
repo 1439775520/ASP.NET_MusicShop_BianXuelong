@@ -1,0 +1,91 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HouTai.master.cs" Inherits="MUSIC.HouTai" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        .top{
+            height:70px;
+            background-color:darkslategray;
+            display:flex;
+            justify-content:space-around;
+            align-content:center;
+        }
+        .toptype{
+            color:blue;
+        }
+        ul{
+            height:100%;
+            background-color:black;
+            margin-top:1px;
+            width:300px;
+        }
+        ul li{
+            height:50px;
+            width:100%;
+            text-align:center;
+        }
+        .hlink{
+            color:white;
+        }
+        ul li:hover{
+            background-color:deepskyblue;
+        }
+        .thispage{
+            background-color:deepskyblue;
+        }
+        a{
+            text-decoration:none;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="top">
+            <div style="flex-grow:9;margin-top:20px;">
+                <span style="color:white;margin:20px 20px;">在线音乐商店-后台管理</span>
+            </div>
+            <div style="flex-grow:1;margin-top:20px;">
+                <asp:Image ID="Image1" runat="server" ImageUrl="~/Images/icon/user.png" Width="35" Height="35" />
+            </div>
+            <div style="flex-grow:1;margin-top:20px;">
+                <asp:HyperLink ID="hlinktype" runat="server" CssClass="toptype"></asp:HyperLink>
+            </div>
+        </div>
+        <div style="display:flex;height:100%;margin-top:1px;justify-content:space-around">
+            <div style="width:300px;height:700px;background-color:black;flex-grow:1;">
+                <ul>
+                    <li>
+                        <asp:HyperLink ID="hlinkmuisctypegl" runat="server" CssClass="hlink">类型管理</asp:HyperLink>
+                    </li>
+                    <li>
+                        <asp:HyperLink ID="hlinkmuiscgl" runat="server" CssClass="hlink">音乐管理</asp:HyperLink>
+                    </li>
+                    <li>
+                        <asp:HyperLink ID="hlinkordergl" runat="server" CssClass="hlink">订单管理</asp:HyperLink>
+                    </li>
+                    <li>
+                        <asp:HyperLink ID="hlinkrolegl" runat="server" CssClass="hlink">角色管理</asp:HyperLink>
+                    </li>
+                    <li>
+                        <asp:HyperLink ID="hlinkusergl" runat="server" CssClass="hlink">用户管理</asp:HyperLink>
+                    </li>
+                </ul>
+            </div>
+            <div style="flex-grow:17;margin-left:20px;">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>       
+    </form>
+</body>
+</html>

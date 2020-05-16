@@ -1,0 +1,24 @@
+﻿body {
+    background-color: #cc753f;
+    height: 95vh;
+    overflow: hidden;
+}
+
+.login-container {
+    background-image: url(../images/bg0.jpg);
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+    width: 1000px;
+    margin: 100px auto;
+    box-shadow: 0 0 50px 1px #808080;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+    height: 480px;
+}
+
+.login {
+    padding: 10px 0 0px 70px;
+    color: black;
+}
+
